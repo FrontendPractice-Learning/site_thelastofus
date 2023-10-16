@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    color: #fff; 
+    position: relative;
+    height: 400px   ;
+    display: grid;
+}
+
+#backgroundimg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(Imagens/header\ final\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 40%;
+
+}
+
+/*o z-index é profundidade, dessa maneira o texto que não aparecia ficou na frente da imagem. Para que ele não fique translúcido basta colocar o z index do background como -1,
+ou seja, estou jogando o background para traz e o texto para frente.*/
+header h1 {
+    font-size: 120px;
+    z-index: 2;
+}
+
+header h1, 
+section h2, .formulario,
+form button {
+    font-family: 'Anton', sans-serif;
+}
+
+body,
+.formulario p,
+input, textarea {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+footer{
+    font-size: 12px;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-left: 16px;
+}
+
+
+body {
+    background-color: black;
+    color: #fff;
+}
+
+section h1,
+section h2,
+section h3 {
+    font-weight: normal;
+}
+
+.container {
+    width: 1366px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.cont2 img {
+    height: 200px;
+    margin-left: 35%;
+    margin-top: 20px;
+    width: 35%;
+
+}
+
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    height: 200px;
+    width: 100%;
+}
+
+.articles article {
+    width: 25%;
+    margin-bottom: 16px;
+    margin-right: 30px;
+    
+}
+
+section{
+    padding: 16px 0;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.heman img {
+    margin-left: 27%;
+    height: 400px;
+    margin-top: 50px;
+    opacity: 80%;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.heman {
+    background-color: rgb(15, 14, 14);
+}
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+#contact .container{
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input, 
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+form button {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c5c5c5;
+}
+
